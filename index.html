@@ -49,7 +49,8 @@
             <div class="bg-opacity-30"></div>
             <div class="hero-content text-center text-white">
                 <div class="max-w-xl">
-                    <h1 class="mb-5 text-3xl lg:text-5xl font-bold">End-to-End Travel with <br><span class="text-green-400">P
+                    <h1 class="mb-5 text-3xl lg:text-5xl font-bold">End-to-End Travel with <br><span
+                            class="text-green-400">P
                             Paribahan</span></h1>
                     <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
                         exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
@@ -124,7 +125,8 @@
             <p class="inter lg:text-lg font-normal text-[#03071299]">Yes, you can run unit tests and view the results
                 directly within the app. The integrated <br> testing features allow for a streamlined .</p>
         </div>
-        <div class="flex justify-center items-center flex-col lg:flex-row bg-red-400 w-[350px] lg:w-[1170px]  lg:h-[418px] mx-4 lg:mx-20 mt-10 px-5 rounded-3xl">
+        <div
+            class="flex justify-center items-center flex-col lg:flex-row bg-red-400 w-[350px] lg:w-[1170px]  lg:h-[418px] mx-4 lg:mx-20 mt-10 px-5 rounded-3xl">
             <div class="lg:w-2/3">
                 <div class=" flex flex-col lg:flex-row justify-between">
                     <div class="flex gap-3 mt-5">
@@ -166,7 +168,8 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col lg:flex-row gap-5 mt-10 mx-5 lg:mx-20 max-w-screen-sm lg:max-w-screen-xl lg:h-[1056px] bg-purple-300">
+        <div
+            class="flex flex-col lg:flex-row gap-5 mt-10 mx-5 lg:mx-20 max-w-screen-sm lg:max-w-screen-xl lg:h-[1056px] bg-purple-300">
             <div class="select-sit1 p-8 w-full">
                 <div class="">
                     <h2 class="text-2xl raleway font-semibold">Select Your Seat</h2>
@@ -178,12 +181,13 @@
                 </div>
                 <hr class="border-dashed mt-4 border-gray-400">
                 <div class="w-full flex justify-end">
-                    <div class="flex mt-4 items-center justify-center w-16 lg:w-28 h-12 lg:h-14 rounded-2xl bg-gray-400"><img class=""
-                            src="images/Vector.png" alt=""></div>
+                    <div
+                        class="flex mt-4 items-center justify-center w-16 lg:w-28 h-12 lg:h-14 rounded-2xl bg-gray-400">
+                        <img class="" src="images/Vector.png" alt=""></div>
                 </div>
                 <div class="w-full">
                     <div class=" flex  mt-5">
-                        <div class="w-3/5 flex items-center gap-1">
+                        <div class="w-3/5 flex items-center gap-2">
                             <span class="w-4 h-6 ">A</span><button
                                 class="btn w-14 lg:w-24 h-8 lg:h-14 bg-gray-200 lg:mr-8">A1</button>
                             <button class="btn  w-14 lg:w-24 h-8 lg:h-14 bg-gray-200">A2</button>
@@ -297,7 +301,7 @@
 
             </div>
             <div class="my-5 border-l border-dashed border-gray-400"></div>
-            <div class="p-5 lg:p-8 w-2/4 lg:w-2/5 select-sit2">
+            <div class="p-5 lg:p-8 lg:w-2/5 select-sit2">
                 <h2 class="text-2xl raleway font-semibold">Select Your Seat</h2>
                 <hr class="border-dashed mt-4 border-gray-400">
                 <div class="mt-5 w-[300px] lg:w-[400px] h-[400px] lg:h-[335px] bg-[#F7F8F8] rounded-2xl px-6">
@@ -363,7 +367,25 @@
                         </div>
                         <input type="text" placeholder="Enter your email id" class="input input-bordered w-full" />
                     </label>
-                    <button class="btn w-full mt-6 bg-green-400">Next</button>
+                    <!-- <button class="btn w-full mt-6 bg-green-400">Next</button> -->
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button disabled class="btn w-full mt-6 bg-green-400" onclick="my_modal_2.showModal()">Next</button>
+                    <dialog id="my_modal_2" class="modal w-full">
+                        <div class="modal-box text-center">
+                            <div class="flex w-full justify-center mb-3">
+                                <img src="images/success.png" alt="">
+                            </div>
+                            <h3 class="font-bold text-lg">SUCCESS</h3>
+                            <p class="py-4">Thank you for Booking Our Bus Seats. 
+                                We are working hard to find the best service and deals for you. 
+                                Shortly you will find a confirmation in your email.
+                            </p>
+                            <button class="btn bg-green-500">Continue</button>
+                        </div>
+                        <form method="dialog" class="modal-backdrop">
+                            <button>close</button>
+                        </form>
+                    </dialog>
 
                     <div class="flex justify-between mt-6 p-6">
                         <a href="">Terms and Conditions</a>
